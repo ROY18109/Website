@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>CONTACT PAGE</title>   
+<link rel="stylesheet" href="STYLE/Styles.css">
+<style>
+    body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('../pages/IMAGES 2/Contactbg.jfif');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-size: 15px;
+    }
+    .width-30 {
+
+width: 30%;
+
+}
+
+.contact-question {
+
+background-color: rgb(255, 255, 255, 0.1);
+
+margin-bottom: 4px;
+
+text-align: center;
+
+}
+
+.contact-question-title {
+
+color: #F3D000;
+
+font-size: 25px;
+
+}
+
+.button-yellow {
+
+background-color: #F3D000;
+
+border: none;
+
+color: #f1ee05;
+
+padding: 5px 25px 5px 25px;
+
+transition: 0.5s;
+
+}
+.button-yellow:hover {
+
+Background-color: #ddd4ee; border: none; color: #442d4d; padding: 5px 25px 5px 25px;
+        }
+  </style>
+  <script>
+function questionSent() {
+    alert("Your question has been sent")
+}
+  </script>
+    </head>
+<body>
+    <!-- <header> -->
+        <div>
+    <a href="Home Page.html">
+    <img src="IMAGES 2/download.png" height="120px">
+    </a>
+    <div class="navigation-links">
+        <a href="Home Page.html" class="navigation-link">Home</a>
+        <a href="About.html"  class="navigation-link">About</a>
+        <a href="Course.html" class="navigation-link">Course</a>
+        <a href="Contact.html" class="navigation-link">Contact</a>
+    </div>
+        </div>
+        <!-- middle -->
+       <div>
+        <div class="width-100 display-if">
+        <!-- map -->
+<div class="width-100"><iframe width="100%" height="410" 
+    frameborder=”0” scrolling=”no” marginheight=”0” marginwidth=”0” style=”border:0” allowfullscreen 
+    src=https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=3%20port%
+    20Harcourt%20eoad&amp;maptype=roadmap&amp;zoom=14><a href=https://www.maps.ie/world-time-zone-map/>Google Maps Radius
+</a></iframe></div>
+        <!-- question -->
+       <div class="contact-question width-100">
+        <span class="contact-question-title">Send us a Question</span>
+       
+<form action="" method="get" target="_self" class="yellow-text">
+Name: <br> <input type="text" name="namefield" class="width-30" required value="Name"><br>
+Surname:<br> <input type="text" name="namefield" class="width-30" required value="Surname"><br>
+Age:<br> <input type="date" name="agefield" class="width-30" required value="2026-08-08" 
+max="2026-08-28"><br>
+Gender:<br>
+Male:<input type="radio" name="gender" value="male" checked>
+Female:<input type="radio" name="gender" value="Female"><br>
+Tel:<br> 
+<input type="tel" name="telfield" class="width-30" required 
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}"
+placeholder="xxx-xxx-xxx-xx">
+<br>
+Type of question: <br>
+<select name="typefield" class="width-30">
+    <option value="course">Question about course</option>
+      <option value="lesson" selected>Question about lesson</option>
+    </select><br>
+    Question: <br>
+    <textarea name="question field" rows="5"class="width-30" required minlength="3" maxlength="5600"></textarea><br>
+    <input type="submit" value="send" class="button-yellow" onclick="questionSent()">
+      <input type="reset" value="reset" class="button-yellow">
+</form>
+       </div>
+       </div>
+       <div class="grey-text">
+        <b>Our address is</b>
+        <address>
+RX3R+MXR, Woji, Port Harcourt 000000, Rivers, Nigeria
+</address>
+       </div>
+        </div>     <br><br><br><br>     <br><br><br><br>
+      <!-- footer -->
+          <div class="footer">
+        <div>
+            <a href="">
+              <img src="IMAGES 2/fblogo.png" alt="facebook" height="50px">  
+            </a>
+
+             <a href="">
+              <img src="IMAGES 2/iglogo.png" alt="instagram" height="50px">  
+            </a>
+
+             <a href="">
+              <img src="IMAGES 2/twitter.png" alt="twitter" height="50px">  
+            </a>
+        </div>
+        <p style="color: white;" class="mt-0">copyright &copy; <a href="mailto: zxcv42529@gmail.com" class="grey-text">
+            Masterminds</a> <sup>&reg;</sup></p>
+          </div>
+</body>
+</html>
